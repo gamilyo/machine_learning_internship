@@ -1,0 +1,33 @@
+The goal of this task is to classify between the spk_1 and spk_2
+
+The final output should be "0" for spk_1 and "1" for spk_2
+
+Data is organized as follows
+============================
+
+data
+├── test
+│   ├── spk_1
+│   └── spk_2
+└── train
+    ├── spk_1
+    └── spk_2
+
+=> the train directory contains about an hour. Each class is half an hour per class
+
+=> the test  directory contains about  10 wav files per each class
+
+
+Hint:
+=====
+You can use the internet 
+The wifi name is "guests" and the password is "Rdi@2020$$"
+
+you can use the library 'librosa'
+1- read the wav files, use "librosa.load"
+2- extract MFCC features, use "librosa.feature.mfcc"
+
+note that MFCC is a 2D dimensional features
+
+
+Do you best in getting higher accuracy
